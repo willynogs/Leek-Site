@@ -6,12 +6,22 @@ $(function(){
   var booking = new OriDomi('.booking');
   */
   rectDimensions();
-
-  $('.content').hover(function() {
-    $(this > "span").hide();
-  }, function() {
-
+  /*
+  $('.fa-twitter').click(function(){
+    $('.content').addClass('content-animate');
   });
+  */
+  /*
+  $('.content').hover(function(){
+    $(this).animate({
+      "background-size": "110%"
+    }, 2000, "linear");
+  }, function(){
+    $(this).animate({
+      "background-size": "100%"
+    }, 2000, "linear");
+  });
+  */
 });
 
 function rectDimensions () {

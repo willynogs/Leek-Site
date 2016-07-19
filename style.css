@@ -23,33 +23,52 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /*
   transition: 1s ease-in-out;
-  transform-origin: left;
+  transform-origin: top;
+  */
 }
 
-.content:active {
-  transform: perspective(400px) rotateY(180deg);
+/*
+.content-animate {
+  transform: perspective(400px) rotatex(90deg);
   transform-style: preserve-3d;
 }
+*/
 
 .about {
-  background: url(bg.jpg);
-  background-size: 100%;
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   float: left;
 }
 
 .events {
-  background-color: #295;
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   float: left;
 }
 
 .media {
-  background-color: #973;
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   float: right;
 }
 
 .booking {
-  background-color: #128;
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   float: right;
 }
 
