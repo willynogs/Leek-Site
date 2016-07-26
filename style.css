@@ -2,17 +2,21 @@ body {
   margin: 0;
 }
 
+.content {
+  display: flex;
+}
+
 .container {
-  width: 100%;
+  width: 70vw;
   height: 100vh;
-  background-color: #222;
-  position: fixed;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
+  position: fixed;
 }
 
 svg {
@@ -24,6 +28,7 @@ svg {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 3s linear forwards;
+  position: fixed;
 }
 
 @keyframes dash {
@@ -36,12 +41,12 @@ svg {
   font-family: 'Josefin Sans', sans-serif;
   width: 30vw;
   height: 100vh;
+  background-color: #222;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: absolute;
 }
 
 .overlay a {
@@ -65,10 +70,6 @@ svg {
 		height: 1px;
 		margin-top: -0.7em;
 		background: #fff;
-    /*
-		transform-origin: left;
-		transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
-    */
     transition: 0.8s ease;
 }
 
@@ -77,18 +78,6 @@ svg {
 		transform: scaleX(0);
 		transform-origin: center right;
 }
-
-.overlay a:hover {
-  /*
-  transform: scale(1.2);
-  */
-}
-
-/* ATTEMPT TO MAKE ALL OTHER LINKS SMALLER
-.overlay a:hover ~ a {
-  transform: scale(0.8);
-}
-*/
 
 .overlay .title {
   font-size: 5vw;
@@ -99,6 +88,52 @@ svg {
   border-bottom: 1px solid #fff;
   margin: 0 0 20px 0;
   padding: 0 3px 0 0;
+}
+
+#about {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  background-color: #222;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.before-animate {
+  opacity: 0;
+}
+
+.animate-frame {
+  -webkit-animation: flicker 1s; /* Safari 4+ */
+  -moz-animation:    flicker 1s; /* Fx 5+ */
+  -o-animation:      flicker 1s; /* Opera 12+ */
+  animation:         flicker 1s;
+}
+
+@-webkit-keyframes flicker {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  10%   { opacity: 0; }
+  20%   { opacity: 1; }
+  30%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes flicker {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes flicker {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes flicker {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  10%   { opacity: 0; }
+  20%   { opacity: 1; }
+  30%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @media (max-width: 650px) {
