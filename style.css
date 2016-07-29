@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+.credit {
+  width: 100vw;
+  height: 100vh;
+}
+
 .content {
   display: flex;
 }
@@ -90,14 +95,59 @@ svg {
   padding: 0 3px 0 0;
 }
 
+.footer {
+  height: 15vh;
+  width: inherit;;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer i {
+  transition: 0.3s ease;
+}
+
+.fa-facebook:hover {
+  color: #3B5998;
+}
+
+.fa-twitter:hover {
+  color: #77C7F7;
+}
+
+.fa-instagram:hover {
+  color: #BBAA99;
+}
+
+.fa-soundcloud:hover {
+  color: #FF5500;
+}
+
 #about {
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
   background-color: #222;
   width: 70vw;
   display: flex;
+  /*
   justify-content: center;
+  */
+  align-items: center;
+  flex-direction: column;
   z-index: 1;
+}
+
+.section-title {
+  font-size: 3vw;
+  margin: 5vh 0 5vh 0;
+}
+
+.section-content {
+  font-size: 2vw;
+  width: 50vw;
+  text-align: center;
 }
 
 .before-animate {
@@ -105,39 +155,42 @@ svg {
 }
 
 .animate-frame {
-  -webkit-animation: flicker 1s; /* Safari 4+ */
-  -moz-animation:    flicker 1s; /* Fx 5+ */
-  -o-animation:      flicker 1s; /* Opera 12+ */
-  animation:         flicker 1s;
+  -webkit-animation: fadeUp 1s; /* Safari 4+ */
+  -moz-animation:    fadeUp 1s; /* Fx 5+ */
+  -o-animation:      fadeUp 1s; /* Opera 12+ */
+  animation:         fadeUp 1s;
 }
 
-@-webkit-keyframes flicker {
-  0%   { opacity: 0; }
-  5%   { opacity: 1; }
-  10%   { opacity: 0; }
-  20%   { opacity: 1; }
-  30%   { opacity: 0; }
-  100% { opacity: 1; }
+@-webkit-keyframes fadeUp {
+  /*ADD KEYFRAMES*/
 }
-@-moz-keyframes flicker {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+@-moz-keyframes fadeUp {
+  /*ADD KEYFRAMES*/
 }
-@-o-keyframes flicker {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+@-o-keyframes fadeUp {
+  /*ADD KEYFRAMES*/
 }
-@keyframes flicker {
-  0%   { opacity: 0; }
-  5%   { opacity: 1; }
-  10%   { opacity: 0; }
-  20%   { opacity: 1; }
-  30%   { opacity: 0; }
-  100% { opacity: 1; }
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    padding-top: 20px;
+  }
+  100% {
+    opacity: 1;
+    padding-top: 0;
+   }
 }
 
+/*
 @media (max-width: 650px) {
   .overlay {
     width: 100%;
   }
+  .container {
+    display: none;
+  }
+  #about {
+    position: relative;
+  }
 }
+*/
