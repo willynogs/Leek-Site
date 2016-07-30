@@ -4,6 +4,7 @@ $(function(){
 
   // smooth scroll initialization
   $('body').smoothScroll({
-        delegateSelector: 'a'
+        delegateSelector: 'a',
+        speed: 1500
   });
 });

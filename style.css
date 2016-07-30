@@ -1,6 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .content {
@@ -10,16 +11,65 @@ body {
 
 .container {
   width: 70vw;
-  height: 100vh;
   background-color: #fff;
+  /*
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  */
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
   margin: 0 0 0 30vw;
   overflow: hidden;
+}
+
+.landing {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 svg {
@@ -131,6 +181,7 @@ svg {
 }
 
 .section-title {
+  color: #222;
   font-size: 3vw;
   margin: 5vh 0 5vh 0;
 }
