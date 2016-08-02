@@ -184,9 +184,12 @@ svg {
   color: #222;
   font-size: 3vw;
   margin: 5vh 0 5vh 0;
+  transform: rotate(90deg);
+  border-bottom: 1px solid #222;
 }
 
 .section-content {
+  color: #222;
   font-size: 2vw;
   width: 50vw;
   text-align: center;
@@ -221,6 +224,19 @@ svg {
     opacity: 1;
     padding-top: 0;
    }
+}
+
+.horiz-container {
+  width: 10vw;
+}
+
+.horiz-title {
+  height: 100vh;
+  width: 10vw;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*
